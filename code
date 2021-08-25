@@ -1,0 +1,18 @@
+
+<script>
+
+function feast(name, dish){
+  let checkLast1 = name.length; // These two variables store the last index of the name and dish string.
+  let checkLast2 = dish.length;
+
+  if(name.charAt(0) == dish.charAt(0) && name.charAt(checkLast1) == dish.charAt(checkLast2)){
+    return true + " This is a match"
+    //the above if() statement checks the characters of index[0] && of the last index of the given string, compares them to see if they match and returns true.
+  }
+  else{
+    return false + " This is not true"
+  }
+}
+console.log(feast("j Just some random words","jGood afternoions"));
+
+</script>
